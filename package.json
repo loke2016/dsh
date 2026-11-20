@@ -1,0 +1,50 @@
+{
+  "name": "@local/dsh-ip-advisor",
+  "version": "1.0.0",
+  "description": "顶尖IP定位顾问：五阶段访谈式个人IP定位专家，侧栏一键开聊。A five-stage interview consultant for personal IP positioning, one click away in the sidebar.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-preset",
+    "ip-positioning",
+    "personal-branding"
+  ],
+  "scripts": {
+    "build:patch": "node scripts/build-patch.mjs",
+    "test": "node --test \"tests/*.spec.mjs\""
+  },
+  "author": "luxiao",
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}
