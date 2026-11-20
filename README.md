@@ -20,13 +20,13 @@
 **方式 A：图形界面**
 
 1. 打开左侧栏的「插件」页 → 添加插件；
-2. 粘贴 `github:<你的 GitHub 用户名>/dsh-ip-advisor`；
+2. 粘贴 `github:loke2016/dsh`；
 3. 装好后按提示重启（桌面版：应用菜单 → 重启应用与 Host）。
 
 **方式 B：命令行**
 
 ```bash
-dsh plugin --profile desktop add github:<你的 GitHub 用户名>/dsh-ip-advisor
+dsh plugin --profile desktop add github:loke2016/dsh
 ```
 
 > ⚠️ 装完必须重启一次。这个插件带一个新的 Agent 预设和一个侧栏入口，两者都在 Host 启动时装配；只刷新页面不够。

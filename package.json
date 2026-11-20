@@ -33,6 +33,11 @@
   },
   "author": "luxiao",
   "license": "MIT",
+  "homepage": "https://github.com/loke2016/dsh#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loke2016/dsh.git"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
